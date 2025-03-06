@@ -15,9 +15,10 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin:0p;
+
+    margin:0px;
     padding: 0px;
+    height: 100%;
    
 
     
@@ -57,6 +58,7 @@ html, body{
 .image_restaurant{
     height: 375px;
     z-index: 1;
+   
  
   }
 
@@ -110,8 +112,10 @@ html, body{
    
  }
  .choix_plat{
+    display: flex;
     margin-left: 10px;
     align-items: center;
+    flex-direction: column;
  }
 
  .plat:hover {
@@ -126,6 +130,8 @@ html, body{
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 100%;
+    max-width: 634px;
  }
  .aliments > p{
     margin-bottom: 3px;
@@ -329,23 +335,20 @@ html, body{
     /****** General ***********/
 
     .html, body{
-      width: 1440px;
+  
     }
 
      /****** Menu ***********/
 
     .full_menu {
-      width: 1440px;
+     
     
     }
     .menu {
       margin: 0 auto;
-      margin-top: -30px;
+      margin-top: -105px;
     }
-    .card_img {
-      width: 1440px;
-      height:383px ;
-    }
+ 
     .titre_restaurant{
       margin-left: 386px;
       gap:20px;
@@ -363,15 +366,16 @@ html, body{
       flex-direction: row;
       overflow: hidden;
      }
-     
+    
     .choix_plat{
       margin-top: 40px;
     }
     .aliments{
       display: flex;
       flex-direction: column;
-      width: 634px;
-      margin-left: 200px;
+      width: 100%;
+      max-width: 634px;
+     
       row-gap: 12px;
     }
     .aliments_alt {
@@ -437,7 +441,7 @@ html, body{
       margin-bottom: 25px;
     }
     .footer {
-      width: 1440px;
+     
       height: 114px;
       justify-content: flex-end;
       align-items: flex-end;
