@@ -5,6 +5,8 @@ html, body{
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  max-width: 1440px;
+ 
 }
 
 * a{
@@ -54,7 +56,7 @@ html, body{
 .search_area {
   display: flex;
   align-items: center;
-  margin-left: 80px;
+  margin-left: 40px;
 }
 .search {
     background-color:#EAEAEA ;
@@ -196,6 +198,8 @@ background-color:#F6F6F6;
     flex-direction: column;
     background-color: white;
     margin-bottom: 50px;
+    width: 100%;
+    align-items: center;
 
   .fonctionnement_title {
     margin-top: 48px;
@@ -225,7 +229,8 @@ background-color:#F6F6F6;
       width: 350px;
       z-index: 1;
       position: relative;
-      width: 322px;
+      width: 100%;
+      min-width: 322px;
       height: 72px;
       margin-top: 25px;
       
@@ -296,6 +301,10 @@ background-color:#F6F6F6;
       .restaurants_cards {
         min-width: 340px;
         margin-bottom: 56px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
  } 
@@ -475,9 +484,6 @@ margin-right: 10px;
     width: 1440px;
   }
 
-.main{
-    width: 1440px;
-  }
 
    /****** Hero Banner ***********/
 
@@ -551,8 +557,8 @@ margin-right: 10px;
 display:flex;
 gap:31px;
 justify-content: center;
-margin-left: 161px;
 align-items: flex-end;
+width: 100%;
 }
 .btn_fonctionnement {
   flex-basis: 30%;
@@ -576,15 +582,16 @@ align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
   row-gap:50px;
-  column-gap: 100px;
-  margin-left: 181px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 30px;
 }
 .restaurants {
   flex-wrap: wrap;
   flex-direction: row;
   background-color: #F6F6F6;
-  width: 1440px;
+ 
   
 }
 
@@ -595,12 +602,12 @@ align-items: flex-end;
 
 .card {
   height:251px;
-  width: 490px;
+  min-width: 490px;
   padding: 0;
   margin-bottom: 0;
 }
 .card_img {
-  width: 490px;
+  width: 100%;
 }
 .card-txt {
   margin-left: 18px;
@@ -623,7 +630,7 @@ align-items: flex-end;
   margin-bottom: 25px;
 }
 .footer {
-  width: 1440px;
+  width: 100%;
   height: 114px;
   justify-content: flex-end;
   align-items: flex-end;

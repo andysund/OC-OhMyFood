@@ -75,10 +75,9 @@ html, body {
 .titre_restaurant {
   display: flex;
   flex-direction: row;
-  margin-left: 30px;
-  width: 80%;
+  margin-left: 10px;
   align-items: center;
-  gap: 12px;
+  gap: 30px;
 }
 .titre_restaurant .i {
   align-items: center;
@@ -86,6 +85,14 @@ html, body {
 
 .titre_restaurant h1 {
   font-size: 28px;
+  margin-bottom: 0;
+}
+
+.icone_coeur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 28px;
 }
 
 /****** Choix plat ***********/
@@ -104,6 +111,7 @@ html, body {
 }
 
 .plat:hover {
+  max-width: 575px;
   width: 100%;
   transition: width 170ms ease;
   border-top-right-radius: 0;
@@ -116,11 +124,11 @@ html, body {
   flex-direction: column;
   gap: 12px;
   width: 100%;
-  max-width: 634px;
 }
 
 .aliments > p {
   margin-bottom: 3px;
+  margin-top: 40px;
 }
 
 .dish-container {
@@ -134,6 +142,7 @@ html, body {
   background-color: white;
   border-radius: 20px;
   width: 100%;
+  min-width: 349px;
   height: 69px;
   display: flex;
   flex-direction: column;
@@ -169,6 +178,8 @@ html, body {
 
 .plat:hover .selected {
   margin-right: 0px;
+  opacity: 1;
+  transition: margin 0.3s ease, opacity 0.3s ease;
 }
 
 .description_price {
@@ -202,6 +213,7 @@ html, body {
   opacity: 1;
   background: radial-gradient(linear-gradient);
   transition: opacity 170ms;
+  right: 0;
 }
 
 .selected::before {
@@ -324,7 +336,6 @@ html, body {
     margin-top: 22px;
   }
   .menu {
-    width: 1055px;
     height: 100%;
   }
   /****** Choix plat ***********/
