@@ -111,12 +111,30 @@ html, body {
   flex-direction: column;
 }
 
+.plat-content > h1 {
+  margin: 0;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.plat-content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.plat-content :hover {
+  width: 90%;
+}
+
 .plat:hover {
-  max-width: 575px;
   width: 100%;
   transition: width 170ms ease;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .aliments {
@@ -139,7 +157,6 @@ html, body {
 }
 
 .plat {
-  margin-right: -59px;
   background-color: white;
   border-radius: 20px;
   width: 100%;
@@ -167,19 +184,27 @@ html, body {
 
 .plat .selected {
   display: flex;
+  top: 0;
+  right: -59px;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
   height: 100%;
   width: 59px;
+  height: 69px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: #99E2D0;
   transition: margin 120ms;
+  /* left: 0; correction possible du probleme de la div selected */
 }
 
 .plat:hover .selected {
-  margin-right: 0px;
+  right: 0px;
   opacity: 1;
   transition: margin 0.3s ease, opacity 0.3s ease;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .description_price {
@@ -201,7 +226,7 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
-  position: relative;
+  position: absolute;
   height: 69px;
   width: 59px;
   border-top-right-radius: 20px;
@@ -377,6 +402,13 @@ html, body {
     margin-left: 15px;
     margin-top: 5px;
   }
+  .plat .description_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+  }
   .aliments_alt {
     display: flex;
     flex-direction: column;
@@ -386,8 +418,8 @@ html, body {
   .plat:hover {
     width: 575px;
     transition: width 170ms ease;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .plat .selected {
     display: flex;
