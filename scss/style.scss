@@ -229,7 +229,7 @@ background-color:#F6F6F6;
       width: 350px;
       z-index: 1;
       position: relative;
-      width: 100%;
+      width: 90%;
       min-width: 322px;
       height: 72px;
       margin-top: 25px;
@@ -277,7 +277,15 @@ background-color:#F6F6F6;
     }
 
   }
+  .selection .choice {
+    display:flex;
+    gap:31px;
+    justify-content: center;
+    align-items: center;
 
+    width: 100%;
+    flex-direction: column;
+    }
 /****** Restaurants selections  ***********/
 
  .restaurants{
@@ -290,10 +298,12 @@ background-color:#F6F6F6;
   
 
       .restaurants_title {
-        margin-right: 225px;
-        margin-top: 50px;
-        margin-bottom: 25px;
-        margin-left: 20px;
+       display: flex;
+       align-items: center;
+      justify-content: flex-start;
+      height: 68px;
+      margin-top: 40px;
+      width: 80%;
     }
       .restaurants_title > h2 {
         margin: 0px;
@@ -305,6 +315,11 @@ background-color:#F6F6F6;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
+      }
+      .restaurants_cards > a {
+        text-decoration: none;
+        width: 90%; 
       }
 
  } 
@@ -312,9 +327,7 @@ background-color:#F6F6F6;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    width: 340px;
     max-height: 300px;
-    margin-bottom: 20px;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
@@ -336,12 +349,13 @@ background-color:#F6F6F6;
   font-size: 20px;
 }
 .card_img {
-    width: 340px; 
+    min-width: 340px; 
     max-height: 170px; 
     object-fit: cover; 
     border-top-left-radius: 20px; 
     border-top-right-radius: 20px;
     z-index: 2;
+    width: 100%;
     
  }
  .new{
@@ -515,6 +529,7 @@ margin-right: 10px;
   margin-bottom: 30px;
 }
 
+
 .presentation_title .presentation_subtitle {
   font-size: 25px; 
 }
@@ -542,6 +557,7 @@ margin-right: 10px;
 .selection {
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .selection .fonctionnement_title {
   flex-basis: 100%;
@@ -553,12 +569,13 @@ margin-right: 10px;
 }
 
 
-.choice {
+.selection .choice {
 display:flex;
 gap:31px;
 justify-content: center;
 align-items: flex-end;
 width: 100%;
+flex-direction: row;
 }
 .btn_fonctionnement {
   flex-basis: 30%;
@@ -586,6 +603,7 @@ width: 100%;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 30px;
+  
 }
 .restaurants {
   flex-wrap: wrap;
@@ -599,10 +617,15 @@ width: 100%;
   margin-top: 0;
   margin-bottom: 0;
 }
+.restaurants .restaurants_cards > a {
+  text-decoration: none;
+  width: 90%; 
+  max-width: 490px;
+}
 
 .card {
   height:251px;
-  min-width: 490px;
+  max-width: 490px;
   padding: 0;
   margin-bottom: 0;
 }
