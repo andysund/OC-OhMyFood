@@ -189,13 +189,13 @@ html, body {
   background-color: white;
   margin-bottom: 50px;
   width: 100%;
-  align-items: center;
 }
 .selection .fonctionnement_title {
   margin-top: 48px;
   width: 275px;
   height: 31px;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
 .selection .fonctionnement_title > h2 {
   margin-top: 0px;
@@ -283,9 +283,13 @@ html, body {
   height: 68px;
   margin-top: 40px;
   width: 80%;
+  margin-left: -60px;
 }
 .restaurants .restaurants_title > h2 {
   margin: 0px;
+}
+.restaurants .restaurants_title_align {
+  margin-left: 13px;
 }
 .restaurants .restaurants_cards {
   min-width: 340px;
@@ -329,7 +333,6 @@ html, body {
 }
 
 .card_img {
-  min-width: 340px;
   max-height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -501,7 +504,6 @@ html, body {
   }
   .selection .fonctionnement_title {
     flex-basis: 100%;
-    margin-left: 181px;
     margin-top: 50px;
     margin-bottom: 25px;
     font-weight: 700;
@@ -526,8 +528,6 @@ html, body {
   .restaurants .restaurants_title {
     margin-top: 35px;
     margin-bottom: 35px;
-    flex-basis: 100%;
-    margin-left: 181px;
   }
   .restaurants .restaurants_cards {
     display: flex;
